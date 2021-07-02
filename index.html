@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html>
+<head>
+    <title></title>
+    
+    <script src="https://kit.fontawesome.com/40cc7560f5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+   
+    <!-- Alle Skripte werden ohne nutzung von anderen Komponente oder Abhängigkeit erstellt -->
+    <link rel="stylesheet" href="style.css" />
+   
+    <header id="header">
+        <img src="logo3.png">
+        <i id="logo_text">Test your Typing Speed</i>
+        <nav id="headerNav">
+            <a href="#" id="newTest">new test</a>
+            <a href="#pageFooter">how it works</a>
+            <a href="https://www.linkedin.com/in/mulham-alesali/?originalSubdomain=de">contact</a>
+        </nav>
+        
+    </header>
+	
+    <main id="main">
+        <article id="firstArticle">
+
+                <div >
+                <img id="speedClockImage" src="speed.jpg" alt="speed clock" style="display:none;">
+                
+
+                  
+					<canvas id="canvas" width="200" height="200">
+                    Your browser does not support the HTML5 canvas tag.
+                </canvas>
+
+				
+                    <script src="canvas.js">
+                    </script>
+
+            </div>    
+                <div>
+                <p>
+                    <div id="wordsBox">
+                        <code>hello</code> <code>how</code> <code>are</code> <code>code</code> <code>what</code> <code>hand</code> <code>haha</code> <code>is</code> <code>hello</code> <code>hello</code> <code>how</code> <code>are</code> <code>you</code> <code>but</code>
+
+                    </div>
+                    <input id="wordInput" type="text" />
+                    <div id="race">
+
+                        <div id="result">
+                            <em>time left: <code id="timeLeft">60</code> sec</em>
+                            &nbsp;&nbsp;<wbr />&nbsp;&nbsp;
+                            <em>&nbsp;speed: <code id="speed">0</code> wpm</em>
+                        </div>
+                        <img id="refreshButton" src="refresh.png" width="55" height="55" />
+
+                    </div>
+
+
+                </p>
+
+                <p>
+
+                    <div id="option">
+
+                    </div>
+
+                </p>
+            </div>
+
+        </article>
+      
+        <article id="afterTest">
+            
+            <div id="resultBox">
+                <div>
+                    <h1>Your Result:</h1>
+                    
+                  Word per minute <code id="wordPerMinute"></code> wpm<br />
+                  keystrokes <code id="keyStrokes"></code> <br />
+                  Wrong Strokes <code id="wrongStrokes"></code> <br />
+                  <div id="testAgain">
+                    <h1>
+                        Test Again
+                      </h1>
+                  </div>
+                </div>
+                <div>
+
+                      <!-- <img id="shareOnFacebook" src="shareonfacebook.png" width="300" height="100" alt="share on facebook" /> -->
+
+                        <img id="spongePop" src="logo2.jpg" />
+                        
+                </div>
+              </div>
+
+
+        </article>
+
+
+    </main>
+
+	
+    <footer id="pageFooter" class="flex-container">
+
+        <article class="footerArticle">
+        <h1>One minute typing test</h1>
+                <div class="footerArticleDiv">
+                    This typing game offer you an easy way to improve your typing speed. A quick way to test your typing speed is our 1-minute typing game on this page. The words that are used in this game are the most common words for the english language. By playing the game you automatically improve your overall typing speed as you practice the words that you use all the time while chatting with your friends or writing a paper for school.
+                </div>
+            </article>
+
+            <article class="footerArticle">
+        <h1>Computers Quote</h1>
+                <div class ="footerArticleDiv">
+                    I think it's fair to say that personal computers have become the most empowering tool we've ever created. They're tools of communication, they're tools of creativity, and they can be shaped by their user.
+                </div>
+            </article>
+
+            <article class="footerArticle">
+        <h1>WPM Definition</h1>
+                <div class="footerArticleDiv">
+                    WPM means Words Per Minute. It is a measure of the output speed on a
+                    keyboard. Here's how it works:
+                    <br />- start a timer and start typing for exactly 1 minute
+                    <br />- count how many characters you just typed including spaces and
+                    punctuation
+                    <br />- divide that value by 5 (the WPM system considers a word is 5 keystrokes)
+                    <br />- the result is your Words Per Minute speed
+                </div>
+            </article>
+
+    </footer>
+
+    <!-- alle Skripts wurden mit Vanilla.js gemacht ohne nutzung von externen Bibiliotheken -->
+    <script src="navbar.js"></script>
+    <script src="actions.js"></script>
+    <script src="canvas.js"></script>
+  
+	
+	
+</body>
+</html>
